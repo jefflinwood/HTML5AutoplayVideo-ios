@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end
 
@@ -18,6 +19,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *htmlFilePath = [[NSBundle mainBundle] pathForResource:@"html5videoautoplay.html" ofType:@""];
+    NSString *html = [NSString stringWithContentsOfFile:htmlFilePath encoding:NSUTF8StringEncoding error:nil];
+    NSURL *baseURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]];
+    self.webView.mediaPlaybackRequiresUserAction = NO;
+    [self.webView loadHTMLString:html baseURL:baseURL];
+    
 }
 
 - (void)didReceiveMemoryWarning

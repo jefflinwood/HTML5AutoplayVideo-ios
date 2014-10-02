@@ -21,6 +21,8 @@
 		284F239219DC790300EC958C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284F237419DC790300EC958C /* UIKit.framework */; };
 		284F239A19DC790300EC958C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 284F239819DC790300EC958C /* InfoPlist.strings */; };
 		284F239C19DC790300EC958C /* HTML5VideoAutoplayAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 284F239B19DC790300EC958C /* HTML5VideoAutoplayAppTests.m */; };
+		284F23A719DC796600EC958C /* html5videoautoplay.html in Resources */ = {isa = PBXBuildFile; fileRef = 284F23A619DC796600EC958C /* html5videoautoplay.html */; };
+		284F23A919DC799500EC958C /* IcelandWaterfall.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 284F23A819DC799500EC958C /* IcelandWaterfall.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		284F239719DC790300EC958C /* HTML5VideoAutoplayAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HTML5VideoAutoplayAppTests-Info.plist"; sourceTree = "<group>"; };
 		284F239919DC790300EC958C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		284F239B19DC790300EC958C /* HTML5VideoAutoplayAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTML5VideoAutoplayAppTests.m; sourceTree = "<group>"; };
+		284F23A619DC796600EC958C /* html5videoautoplay.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = html5videoautoplay.html; sourceTree = "<group>"; };
+		284F23A819DC799500EC958C /* IcelandWaterfall.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IcelandWaterfall.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 		284F237619DC790300EC958C /* HTML5VideoAutoplayApp */ = {
 			isa = PBXGroup;
 			children = (
+				284F23A519DC795100EC958C /* Content */,
 				284F237F19DC790300EC958C /* AppDelegate.h */,
 				284F238019DC790300EC958C /* AppDelegate.m */,
 				284F238219DC790300EC958C /* Main.storyboard */,
@@ -150,6 +155,15 @@
 				284F239819DC790300EC958C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		284F23A519DC795100EC958C /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				284F23A819DC799500EC958C /* IcelandWaterfall.mp4 */,
+				284F23A619DC796600EC958C /* html5videoautoplay.html */,
+			);
+			name = Content;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,8 +242,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				284F23A919DC799500EC958C /* IcelandWaterfall.mp4 in Resources */,
 				284F238919DC790300EC958C /* Images.xcassets in Resources */,
 				284F237B19DC790300EC958C /* InfoPlist.strings in Resources */,
+				284F23A719DC796600EC958C /* html5videoautoplay.html in Resources */,
 				284F238419DC790300EC958C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +398,7 @@
 				GCC_PREFIX_HEADER = "HTML5VideoAutoplayApp/HTML5VideoAutoplayApp-Prefix.pch";
 				INFOPLIST_FILE = "HTML5VideoAutoplayApp/HTML5VideoAutoplayApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -395,6 +412,7 @@
 				GCC_PREFIX_HEADER = "HTML5VideoAutoplayApp/HTML5VideoAutoplayApp-Prefix.pch";
 				INFOPLIST_FILE = "HTML5VideoAutoplayApp/HTML5VideoAutoplayApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -458,6 +476,7 @@
 				284F23A119DC790300EC958C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		284F23A219DC790300EC958C /* Build configuration list for PBXNativeTarget "HTML5VideoAutoplayAppTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +485,7 @@
 				284F23A419DC790300EC958C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
